@@ -1157,16 +1157,17 @@
   margin-bottom: 25px;
 }
 .scheme__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   width: 140px;
   height: 30px;
   font-size: 13px;
-  line-height: 30px;
   font-weight: 700;
   color: #000;
   background-color: #fff;
   border-radius: 33px;
-  text-align: center;
   text-transform: uppercase;
   border: 1px solod white;
   transition: all 0.8s ease;
