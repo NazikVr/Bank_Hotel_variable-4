@@ -1,0 +1,72 @@
+.top-wedding {
+  position: relative;
+  top: -690px;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 75px;
+
+  &__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 64px;
+    margin-bottom: 70px;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    max-width: 800px;
+    font-weight: 500;
+    font-size: 27px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 33px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: $brown;
+    width: 374px;
+    height: 65px;
+    margin-bottom: 80px;
+
+    border: 2px solid $brown;
+    transition: background-color, color, 0.3s;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      color: $brown;
+    }
+  }
+
+  &__text {
+    max-width: 950px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 65px;
+  }
+
+  &__call {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    transition: all 0.8s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $brown;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.conference-hall {
+  color: #fff;
+
+  &__background {
+    height: 620px;
+    width: 100%;
+    background-image: url(../image/background_slider.jpg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 85px;
+  }
+
+  &__tabs {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__tab {
+    height: 30px;
+    font-size: 15px;
+    font-weight: 350;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 33px;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    height: 40px;
+
+    &.active {
+      padding: 0 20px;
+      height: 40px;
+      font-size: 20px;
+      font-weight: 700;
+      background-color: $brown;
+      color: #fff;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    animation: fade 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    height: 620px;
+    width: 60%;
+    background: #000;
+  }
+
+  &__right {
+    width: 35%;
+    height: 620px;
+  }
+
+  &__button {
+    display: block;
+    width: 385px;
+    height: 65px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: rgba($color: #c2a386, $alpha: 0.7);
+    border-radius: 33px;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid $brown;
+    transition: all 0.8s ease;
+    position: relative;
+    top: -50%;
+
+    &:hover {
+      color: $brown;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+    }
+  }
+}
+
+.conference-hall__left .swiper-slide {
+  height: 620px;
+}
+.conference-hall__left .swiper-slide img {
+  height: 620px;
+}
+.conference-hall__left .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+}
