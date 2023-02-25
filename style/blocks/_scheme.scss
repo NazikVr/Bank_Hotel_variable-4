@@ -10,9 +10,22 @@
     margin-bottom: 80px;
 
     &--conference {
+      justify-content: space-around;
       margin-bottom: 30px;
+
+      @include onDesktop {
+        justify-content: space-between;
+      }
+    }
+
+    &__scheme {
+      background-image: url(../../image/scheme_1.png);
+      background-position: center;
+      width: 240px;
+      height: 340px;
     }
   }
+
 
   &__flex-wraper-all {
     position: relative;
@@ -36,8 +49,12 @@
 
     &--conference {
       text-transform: none;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 400;
+
+      @include onSmallTablet {
+        font-size: 30px;
+      }
     }
   }
 
@@ -70,15 +87,21 @@
     font-size: 22px;
 
     &--conference {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 700;
+      text-align: center;
+
+      @include onTablet {
+        text-align: left;
+        font-size: 17px;
+      }
     }
   }
 
   &__midle {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 25px;
   }
 
@@ -97,6 +120,7 @@
     text-transform: uppercase;
     border: 1px solod white;
     transition: all 0.8s ease;
+
 
     &:hover {
       color: #fff;

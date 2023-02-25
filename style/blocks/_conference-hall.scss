@@ -2,32 +2,61 @@
   color: #fff;
 
   &__background {
-    height: 620px;
+    height: 950px;
     width: 100%;
     background-image: url(../image/background_slider.jpg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include onSmallTablet {
+      height: 1150px;
+    }
+
+    @include onTablet {
+      height: 1300px;
+    }
+
+    @media (min-width: 1100px) {
+      height: 1350px;
+    }
+
+    @include onDesktop {
+      height: 620px;
+    }
   }
 
   &__title {
     color: #000;
     text-align: center;
-    margin-bottom: 85px;
+    margin-bottom: 60px;
+
+    @include onTablet {
+      margin-bottom: 85px;
+    }
   }
 
   &__tabs {
     width: 100%;
     list-style: none;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    flex-direction: column;
+
+    @include onTablet {
+      flex-wrap: wrap;
+      height: 250px;
+    }
+
+    @include onDesktop {
+      height: max-content;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__tab {
-    height: 30px;
-    font-size: 15px;
-    font-weight: 350;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,14 +66,44 @@
     transition: all 0.8s ease;
     cursor: pointer;
     height: 40px;
+    font-size: 14px;
+    font-weight: 350;
+    margin: 0 auto;
+
+    @include onSmallTablet {
+      width: 60%;
+    }
+
+    @include onTablet {
+      margin: 0 auto 20px;
+      width: 50%;
+    }
+
+    @include onDesktop {
+      width: 25%;
+    }
 
     &.active {
+      width: 100%;
       padding: 0 20px;
       height: 40px;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 700;
       background-color: $brown;
       color: #fff;
+
+      @include onSmallTablet {
+        width: 60%;
+      }
+
+      @include onTablet {
+        width: 50%;
+      }
+
+      @include onDesktop {
+        width: 25%;
+      }
+
     }
   }
 
@@ -68,39 +127,64 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
   }
 
   &__left {
     display: flex;
     justify-content: center;
-    height: 620px;
-    width: 60%;
-    background: #000;
+    height: max-content;
+    width: 100%;
+
+    @include onDesktop {
+      height: 620px;
+      width: 60%;
+    }
   }
 
   &__right {
-    width: 35%;
+    width: 100%;
     height: 620px;
+
+    @include onDesktop {
+      width: 35%;
+      height: 620px;
+    }
   }
 
   &__button {
-    display: block;
-    width: 385px;
-    height: 65px;
+    width: 70%;
+    height: 30px;
+    font-size: 15px;
+    top: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
-    font-size: 30px;
     background-color: rgba($color: #c2a386, $alpha: 0.7);
     border-radius: 33px;
-    line-height: 65px;
     text-align: center;
     margin: 0 auto;
     border: 1px solid $brown;
     transition: all 0.8s ease;
     position: relative;
-    top: -50%;
+
+    @include onSmallTablet {
+      width: 70%;
+      height: 65px;
+      font-size: 30px;
+    }
+
+    @include onDesktop {
+      width: 385px;
+    }
 
     &:hover {
       color: $brown;
@@ -110,13 +194,38 @@
 }
 
 .conference-hall__left .swiper-slide {
-  height: 620px;
+  @include onDesktop {
+    height: 620px;
+  }
 }
 .conference-hall__left .swiper-slide img {
-  height: 620px;
+  width: 100%;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: center;
+
+  @include onDesktop {
+    width: max-content;
+  }
 }
 .conference-hall__left .swiper-pagination-bullet {
-  width: 25px;
-  height: 25px;
+  position: relative;
+  top: -40px;
+  width: 10px;
+  height: 10px;
   background-color: #fff;
+
+  @include onSmallTablet {
+    top: -75px;
+  }
+
+  @include onTablet {
+    width: 15px;
+    height: 15px;
+  }
+
+  @include onDesktop {
+    width: 25px;
+    height: 25px;
+  }
 }
