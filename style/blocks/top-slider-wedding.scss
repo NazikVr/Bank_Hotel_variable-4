@@ -19,7 +19,6 @@
     display: flex;
   }
 
-
   &-arrow {
     position: absolute;
     top: 40%;
@@ -44,8 +43,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-
   }
 
   &-dots {
@@ -56,10 +53,12 @@
     justify-content: center;
     align-items: center;
   }
+
   &-dots li {
     list-style: none;
     margin: 0 10px;
   }
+  
   &-dots button {
     font-size: 0;
     height: 15px;
