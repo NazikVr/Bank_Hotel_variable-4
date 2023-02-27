@@ -1,9 +1,21 @@
-.placement-scheme{
+.placement-scheme {
   &__title {
-    font-size: 42px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 85px;
     font-weight: 600;
+
+    @include onSmallTablet {
+      font-size: 27px;
+    }
+
+    @include onTablet {
+      font-size: 35px;
+    }
+
+    @include onDesktop {
+      font-size: 42px;
+    }
   }
 
   &__tabs {
@@ -11,13 +23,22 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 85px;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+    }
   }
 
   &__tab {
-    width: 320px;
     height: 65px;
-    font-size: 27px;
+    width: 100%;
+    font-size: 15px;
     font-weight: 350;
     display: flex;
     align-items: center;
@@ -29,11 +50,28 @@
     border: 1px solid $brown;
     transition: all 0.8s ease;
     cursor: pointer;
+    margin-bottom: 30px;
 
     &.active {
       font-weight: 900;
       background-color: $brown;
       color: #fff;
+    }
+
+    @include onSmallTablet {
+      font-size: 20px;
+      width: 320px;
+    }
+
+    @include onTablet {
+      width: 210px;
+      font-size: 16px;
+    }
+
+    @include onDesktop {
+      width: 320px;
+      margin-bottom: 0;
+      font-size: 27px;
     }
   }
 
@@ -43,7 +81,7 @@
 
   &__content {
     animation: fade 1s ease;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -57,17 +95,30 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
   }
 
   &__left {
     display: flex;
     justify-content: center;
     height: 450px;
-    width: 50%;
+    width: 100%;
+
+    @include onDesktop {
+      width: 50%;
+    }
   }
 
   &__right {
-    width: 50%;
+    width: 100%;
     height: 450px;
+
+    @include onDesktop {
+      width: 50%;
+    }
   }
 }

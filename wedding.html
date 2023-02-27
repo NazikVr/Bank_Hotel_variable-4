@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+      rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -25,33 +25,66 @@
   </head>
 
   <body>
-
+  <!-- <div class="slider-content">
+  </div> -->
+  <!-- <div class="slider-controls">
+    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider-bullets">
+      <span class="bullet active"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+    </div>
+    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+  </div> -->
     <section>
       <div class="slider">
         <div class="slider__item">
           <img src="./image/slide1.jpg">
+          <div class="top-wedding">
+            <div class="top-wedding__subtitle top__subtitle--wedding">
+              Вишукані локації для найщасливіших моментів:
+            </div>
+            <h1 class="top-wedding__title">ресторан safe</h1>
+            <a href="#" class="top-wedding__button">
+              замовити подію
+            </a>
+            <a href="tel:+380682975065" class="top-wedding__call">
+              +38 068 297 50 65
+            </a>
+          </div>
         </div>
         <div class="slider__item">
           <img src="./image/slide2.jpg">
+          <div class="top-wedding">
+            <div class="top-wedding__subtitle top__subtitle--wedding">
+              Вишукані локації для найщасливіших моментів:
+            </div>
+            <h1 class="top-wedding__title">ресторан safe</h1>
+            <a href="#" class="top-wedding__button">
+              замовити подію
+            </a>
+            <a href="tel:+380682975065" class="top-wedding__call">
+              +38 068 297 50 65
+            </a>
+          </div>
         </div>
         <div class="slider__item">
           <img src="./image/slide3.jpg">
-        </div>
-      </div>
-      <div class="container">
-        <div class="top-wedding">
-          <div class="top-wedding__subtitle top__subtitle--wedding">
-            Вишукані локації для найщасливіших моментів:
+          <div class="top-wedding">
+            <div class="top-wedding__subtitle top__subtitle--wedding">
+              Вишукані локації для найщасливіших моментів:
+            </div>
+            <h1 class="top-wedding__title">ресторан safe</h1>
+            <a href="#" class="top-wedding__button">
+              замовити подію
+            </a>
+            <a href="tel:+380682975065" class="top-wedding__call">
+              +38 068 297 50 65
+            </a>
           </div>
-          <h1 class="top-wedding__title">ресторан safe</h1>
-          <a href="#" class="top-wedding__button">
-            замовити подію
-          </a>
-          <a href="tel:+380682975065" class="top-wedding__call">
-            +38 068 297 50 65
-          </a>
         </div>
       </div>
+
     </section>
 
     <section class="placement-scheme page__placement-scheme">
@@ -71,14 +104,30 @@
           <article class="placement-scheme__content">
             <div class="placement-scheme__wrapper">
               <div class="placement-scheme__left">
-                <img src="image/hall__grapfic.png" alt="scheme">
+                <picture>
+                  <source media="(max-width: 550px)" srcset="image/hall__grapfic.png" width="100%" height="300px">
+                  <source media="(max-width: 780px)" srcset="image/hall__grapfic.png" width="100%" height="400px">
+                  <img src="image/hall__grapfic.png" alt="scheme">
+                </picture>
               </div>
               <div class="placement-scheme__right scheme">
                 <div class="scheme__top">
-                  <img src="image/area.png" alt="">
-                  <img src="image/166.png" alt="">
-                  <img src="image/presentation.png" alt="">
-                  <img src="image/60.png" alt="">
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/area.png" width="50px" height="50px">
+                    <img src="image/area.png" alt="area">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/166.png" width="50px" height="30px">
+                    <img src="image/166.png" alt="166">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/presentation.png" width="50px" height="50px">
+                    <img src="image/presentation.png" alt="presentation">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/60.png" width="50px" height="30px">
+                    <img src="image/60.png" alt="60">
+                  </picture>
                 </div>
                 <h3 class="scheme__title">ресторан safe</h3>
                 <h4 class="scheme__subtitle">Вишукана локація для щасливих моментів</h4>
@@ -102,14 +151,30 @@
           <article class="placement-scheme__content">
             <div class="placement-scheme__wrapper">
               <div class="placement-scheme__left">
-                <img src="image/hall__grapfic.png" alt="scheme">
+                <picture>
+                  <source media="(max-width: 550px)" srcset="image/hall__grapfic.png" width="100%" height="300px">
+                  <source media="(max-width: 780px)" srcset="image/hall__grapfic.png" width="100%" height="400px">
+                  <img src="image/hall__grapfic.png" alt="scheme">
+                </picture>
               </div>
               <div class="placement-scheme__right scheme">
                 <div class="scheme__top">
-                  <img src="image/area.png" alt="">
-                  <img src="image/166.png" alt="">
-                  <img src="image/presentation.png" alt="">
-                  <img src="image/60.png" alt="">
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/area.png" width="50px" height="50px">
+                    <img src="image/area.png" alt="area">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/166.png" width="50px" height="30px">
+                    <img src="image/166.png" alt="166">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/presentation.png" width="50px" height="50px">
+                    <img src="image/presentation.png" alt="presentation">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/60.png" width="50px" height="30px">
+                    <img src="image/60.png" alt="60">
+                  </picture>
                 </div>
                 <h3 class="scheme__title">ресторан safe</h3>
                 <h4 class="scheme__subtitle">Вишукана локація для щасливих моментів</h4>
@@ -133,14 +198,30 @@
           <article class="placement-scheme__content">
             <div class="placement-scheme__wrapper">
               <div class="placement-scheme__left">
-                <img src="image/hall__grapfic.png" alt="scheme">
+                <picture>
+                  <source media="(max-width: 550px)" srcset="image/hall__grapfic.png" width="100%" height="300px">
+                  <source media="(max-width: 780px)" srcset="image/hall__grapfic.png" width="100%" height="400px">
+                  <img src="image/hall__grapfic.png" alt="scheme">
+                </picture>
               </div>
               <div class="placement-scheme__right scheme">
                 <div class="scheme__top">
-                  <img src="image/area.png" alt="">
-                  <img src="image/166.png" alt="">
-                  <img src="image/presentation.png" alt="">
-                  <img src="image/60.png" alt="">
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/area.png" width="50px" height="50px">
+                    <img src="image/area.png" alt="area">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/166.png" width="50px" height="30px">
+                    <img src="image/166.png" alt="166">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/presentation.png" width="50px" height="50px">
+                    <img src="image/presentation.png" alt="presentation">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 550px)" srcset="image/60.png" width="50px" height="30px">
+                    <img src="image/60.png" alt="60">
+                  </picture>
                 </div>
                 <h3 class="scheme__title">ресторан safe</h3>
                 <h4 class="scheme__subtitle">Вишукана локація для щасливих моментів</h4>
@@ -328,10 +409,8 @@
       </div>
     </section>
 
-
-
-    <script src="slick.min.js"></script>
-    <script src="main.js"></script>
+      <script src="slick.min.js"></script>
+      <script src="main.js"></script>
   </body>
-
+</div>
 </html>
