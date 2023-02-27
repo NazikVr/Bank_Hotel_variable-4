@@ -30,7 +30,15 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 5000,
     centerMode: true,
-    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 });
 
@@ -49,3 +57,9 @@ tabs.forEach((tab, index) => {
 });
 
 tabs[1].click();
+
+// $('.slider').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+  
+// })

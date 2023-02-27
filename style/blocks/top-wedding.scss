@@ -14,17 +14,37 @@
   &__title {
     text-transform: uppercase;
     color: #fff;
-    font-size: 64px;
+    font-size: 30px;
     margin-bottom: 70px;
     font-weight: 600;
+
+    @include onSmallTablet {
+    font-size: 40px;
+    }
+
+    @include onTablet {
+      font-size: 50px;
+    }
+
+    @include onDesktop {
+      font-size: 64px;
+    }
   }
 
   &__subtitle {
     max-width: 800px;
     font-weight: 500;
-    font-size: 27px;
+    font-size: 12px;
     color: #fff;
     margin-bottom: 30px;
+
+    @include onSmallTablet {
+      font-size: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 27px;
+    }
   }
 
   &__button {
@@ -35,12 +55,23 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 700;
     background-color: $brown;
-    width: 374px;
-    height: 65px;
+    width: 20%;
+    height: 50px;
     margin-bottom: 80px;
+
+    @include onSmallTablet {
+    font-size: 20px;
+    width: 40%;
+    }
+
+    @include onDesktop {
+      font-size: 30px;
+      width: 374px;
+      height: 65px;
+    }
 
     border: 2px solid $brown;
     transition: background-color, color, 0.3s;
@@ -62,9 +93,13 @@
   &__call {
     text-decoration: none;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
     transition: all 0.8s ease;
+
+    @include onTablet {
+    font-size: 50px;
+    }
 
     &:hover {
       transform: scale(1.1);

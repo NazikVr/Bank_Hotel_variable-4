@@ -17,7 +17,7 @@
     margin-bottom: 70px;
 
     @include onSmallTablet {
-      margin-bottom: 90px;
+      margin-bottom: 100px;
     }
 
     @include onDesktop {
@@ -26,10 +26,10 @@
   }
 
   &__menu {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
     @include onSmallTablet {
-      margin-bottom: 70px;
+      margin-bottom: 100px;
     }
 
     @include onDesktop {
@@ -38,10 +38,10 @@
   }
 
   &__projects {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
-    @include onSmallTablet {
-      margin-bottom: 70px;
+    @include onTablet {
+      margin-bottom: 100px;
     }
 
     @include onDesktop {
@@ -62,7 +62,11 @@
   }
 
   &__propose {
-    margin-bottom: 145px;
+    margin-bottom: 70px;
+
+    @include onTablet {
+      margin-bottom: 100px;
+    }
 
     @include onDesktop {
       margin-bottom: 145px;
@@ -70,6 +74,6 @@
   }
 
   &__placement-scheme {
-    margin: 0 100px;
+    margin: 0 0 100px;
   }
 }
