@@ -820,7 +820,7 @@
 }
 @media (min-width: 1260px) {
   .top__text {
-    max-width: 950px;
+    width: 550px;
     text-align: left;
     font-size: 20px;
   }
@@ -1197,12 +1197,12 @@
 }
 @media (min-width: 780px) {
   .params__title {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 }
 @media (min-width: 1260px) {
   .params__title {
-    margin-bottom: 135px;
+    margin-bottom: 100px;
   }
 }
 .params__el {
