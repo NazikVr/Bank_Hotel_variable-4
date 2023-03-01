@@ -25,9 +25,10 @@ let swiper = new Swiper(".mySwiper", {
 $(document).ready(function () {
   $('.slider').slick({
     dots: true,
+    variableWidth: true,
     slidesToShow: 1,
     speed: 1000,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     centerMode: true,
     responsive: [

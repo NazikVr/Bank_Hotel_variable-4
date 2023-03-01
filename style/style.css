@@ -864,8 +864,20 @@
   position: relative;
 }
 .slider__item {
+  width: 100%;
   position: relative;
   text-align: center;
+}
+@media (min-width: 1260px) {
+  .slider__item {
+    width: 1160px;
+  }
+}
+.slider__item .top-wedding {
+  visibility: hidden;
+}
+.slider__item, .slider .slick-active .top-wedding {
+  visibility: visible;
 }
 .slider__item img {
   position: relative;
@@ -877,6 +889,7 @@
   display: flex;
 }
 .slick-arrow {
+  visibility: hidden;
   position: absolute;
   top: 40%;
   border: none;
@@ -885,8 +898,13 @@
   width: 18px;
   height: 30px;
 }
+@media (min-width: 1260px) {
+  .slick-arrow {
+    visibility: visible;
+  }
+}
 .slick-prev {
-  left: 10%;
+  left: 22%;
   background: url("../image/arrow-left.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -894,7 +912,7 @@
 }
 .slick-next {
   background: url("../image/arrow-right.png");
-  right: 10%;
+  right: 22%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1007,7 +1025,14 @@
 @media (min-width: 550px) {
   .top-wedding__button {
     font-size: 20px;
-    width: 40%;
+    width: 400px;
+  }
+}
+@media (min-width: 780px) {
+  .top-wedding__button {
+    font-size: 25px;
+    height: 65px;
+    width: 500px;
   }
 }
 @media (min-width: 1260px) {

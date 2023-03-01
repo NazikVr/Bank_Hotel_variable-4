@@ -64,7 +64,13 @@
 
     @include onSmallTablet {
     font-size: 20px;
-    width: 40%;
+    width: 400px;
+    }
+
+    @include onTablet {
+      font-size: 25px;
+      height: 65px;
+      width: 500px;
     }
 
     @include onDesktop {
