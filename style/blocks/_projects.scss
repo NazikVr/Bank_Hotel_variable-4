@@ -77,3 +77,36 @@
     }
   }
 }
+
+.swiper-slide {
+  position: relative;
+
+  &__description {
+    position: absolute;
+  }
+}
+.desc {
+  display: none;
+  color: aliceblue;
+
+  @include onTablet {
+    display: block;
+  }
+
+  &__text {
+    width: 50%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(192, 155, 120, 0.5);
+    height: max-content;
+    position: relative;
+    top: -100%;
+
+    @include onDesktop {
+      top: -150%;
+    }
+  }
+}

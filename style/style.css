@@ -1950,6 +1950,40 @@
   color: white;
 }
 
+.swiper-slide {
+  position: relative;
+}
+.swiper-slide__description {
+  position: absolute;
+}
+
+.desc {
+  display: none;
+  color: aliceblue;
+}
+@media (min-width: 780px) {
+  .desc {
+    display: block;
+  }
+}
+.desc__text {
+  width: 50%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(192, 155, 120, 0.5);
+  height: max-content;
+  position: relative;
+  top: -100%;
+}
+@media (min-width: 1260px) {
+  .desc__text {
+    top: -150%;
+  }
+}
+
 .form__subtext {
   font-size: 20px;
   font-weight: 350;
